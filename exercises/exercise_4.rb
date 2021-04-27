@@ -31,4 +31,8 @@ end
   
   end
 end
-  
+
+# OR:
+
+@womens_stores = Store.where(womens_apparel: true).where('annual_revenue > :annual_revenue ', annual_revenue: 1000000);
+puts @womens_stores
